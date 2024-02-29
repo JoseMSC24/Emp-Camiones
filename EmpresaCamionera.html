@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa Camionera</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilos adicionales */
+    /* Puedes personalizar estos estilos según el tema de camiones o cualquier otro estilo que desees */
+    body {
+      background-color: #f8f9fa;
+    }
+    .navbar-brand img {
+        /* Cambia el tamaño del logo */
+        width: 200px; /* Puedes ajustar el tamaño según tus necesidades */
+        height: auto; /* Esto mantiene la relación de aspecto */
+      }  
+    .container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand">
+      <!-- Logo de la empresa camionera -->
+      <img src="img/buslogo1.png" alt="Logo" height="100">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="EmpresaCamionera.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="compras.html">Compras</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Horarios Disponibles</h1>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Salida</th>
+        <th>Destino</th>
+        <th>Horario</th>
+        <th>Disponibilidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Orizaba</td>
+        <td>Ciudad de México</td>
+        <td>9:00 AM</td>
+        <td>5 asientos disponibles</td>
+      </tr>
+      <tr>
+        <td>Orizaba</td>
+        <td>Veracruz</td>
+        <td>11:00 AM</td>
+        <td>3 asientos disponibles</td>
+      </tr>
+      <!-- Añade más filas según los horarios disponibles -->
+    </tbody>
+  </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

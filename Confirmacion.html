@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmación - Empresa Camionera</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilos adicionales */
+    /* Puedes personalizar estos estilos según el tema de camiones o cualquier otro estilo que desees */
+    body {
+        background-color: #f8f9fa;
+      }
+      .navbar-brand img {
+          /* Cambia el tamaño del logo */
+          width: 200px; /* Puedes ajustar el tamaño según tus necesidades */
+          height: auto; /* Esto mantiene la relación de aspecto */
+        }  
+      .container {
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand">
+            <!-- Logo de la empresa camionera -->
+            <img src="img/buslogo1.png" alt="Logo" height="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="EmpresaCamionera.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="compras.html">Compras</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<div class="container">
+  <h1>Confirmación de Compra</h1>
+  <div id="confirmationData"></div>
+</div>
+
+<script>
+  // Obtenemos los parámetros de la URL
+  const params = new URLSearchParams(window.location.search);
+
+  // Obtenemos los valores de los parámetros
+  const nombre = params.get('nombre');
+  const apellidos = params.get('apellidos');
+  const direccion = params.get('direccion');
+  const horario = params.get('horario');
+  const dia = params.get('dia');
+  const asiento = params.get('asiento');
+
+  // Mostramos los datos en la página
+  const confirmationDataElement = document.getElementById('confirmationData');
+  confirmationDataElement.innerHTML = `
+    <p><strong>Nombre:</strong> ${nombre}</p>
+    <p><strong>Apellidos:</strong> ${apellidos}</p>
+    <p><strong>Dirección:</strong> ${direccion}</p>
+    <p><strong>Horario:</strong> ${horario}</p>
+    <p><strong>Día:</strong> ${dia}</p>
+    <p><strong>Asiento:</strong> ${asiento}</p>
+  `;
+</script>
+
+</body>
+</html>
